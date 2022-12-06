@@ -22,7 +22,7 @@ const database = new Client(
 
 export const startDatabase = async () => {
   await database.connect();
-  console.log('Database connect');
+  console.log('Database connected');
 };
 
 export default database;

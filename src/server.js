@@ -2,9 +2,7 @@ import app from './app';
 import 'dotenv/config';
 import { startDatabase } from './database';
 
-const PORT = process.env.API_PORT || 3000;
-
-export default app.listen(PORT, async () => {
+export default app.listen(3000, async () => {
   await startDatabase();
-  console.log(`App is running on http://localhost:${PORT}`);
+  console.log(`App is running on http://localhost:3000`);
 });
